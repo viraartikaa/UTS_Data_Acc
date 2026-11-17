@@ -1,0 +1,7 @@
+{
+  "dicoba": false,
+  "http_status": null,
+  "hasil": "tidak dicoba",
+  "catatan": "BPS_API_KEY belum diset (.env / Colab Secrets)",
+  "keputusan": "Data cuaca tidak tersedia di API BPS, sehingga memakai API publik Open-Meteo (alternatif yang dibolehkan soal 3)."
+}

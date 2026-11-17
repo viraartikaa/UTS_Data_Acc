@@ -1,0 +1,10 @@
+No,Butir_Checklist,Status,Bukti
+1,Sumber data jelas dan dapat ditelusuri,Ya,"BPS Bali: Banyaknya Wisatawan Domestik Bulanan ke Bali, 2004-2025.csv; Open-Meteo: https://archive-api.open-meteo.com/v1/archive?latitude=-8.65&longitude...; Web: https://id.wikipedia.org/wiki/Pariwisata_di_Bali"
+2,Lisensi/ketentuan portal BPS diperiksa,Ya,"Ketentuan Penggunaan BPS (https://www.bps.go.id/assets/term-of-use): konten tunduk pada hak cipta; penggunaan wajib memberi kutipan/kredit ke BPS berisi judul konten, tanggal akses, penulis (jika ada), dan tautan langsung ke konten asli. Sumber data tabel ini: Hasil Survei Dinas Pariwisata Provinsi Bali (tercantum di berkas). Dibaca/diverifikasi: 2026-11-17"
+3,Lisensi/ketentuan Open-Meteo diperiksa,Ya,"Terms (https://open-meteo.com/en/terms): API gratis hanya untuk NON-KOMERSIAL (< 10.000 panggilan/hari, 5.000/jam, 600/menit); data berlisensi CC BY 4.0 -> wajib atribusi ""Weather data by Open-Meteo.com"". Dibaca/diverifikasi: 2026-11-17"
+4,"Tidak ada PII langsung (nama, NIK, alamat, kontak)",Ya,"Scan nama kolom: {'BPS (long)': [], 'Cuaca bulanan': [], 'Tabel scraping': []}; isi data = agregat jumlah kunjungan bulanan"
+5,"Tidak ada quasi-identifier (usia, gender, lokasi detail, dsb.)",Ya,"Kolom data olahan: ['Tahun', 'Bulan_Angka', 'Bulan', 'Jumlah_Wisatawan']; granularitas terkecil = provinsi x bulan"
+6,robots.txt diperiksa sebelum scraping,Ya,"https://id.wikipedia.org/robots.txt status 200, can_fetch=True (2026-11-17 05:38:44)"
+7,"Pengambilan data sopan (jeda, User-Agent jelas, retry terbatas)",Ya,time.sleep(1) sebelum scraping; User-Agent: UTS-DAM-Pariwisata/1.0 (riset akademik; kontak: emailkamu@contoh.ac.id) python-requests; retry maksimal 4x dengan backoff
+8,Atribusi/sitasi sumber dicantumkan,Ya,"metadata/provenance.csv (URL, tanggal akses, lisensi, MD5)"
+9,Keterbatasan & potensi bias dicatat,Ya,Cuaca = titik Denpasar; data = wisatawan domestik; 2020-2021 dipengaruhi COVID-19; data scraping bersumber Wikipedia (bukan sumber resmi)

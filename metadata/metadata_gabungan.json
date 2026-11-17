@@ -1,0 +1,65 @@
+{
+  "judul": "Data gabungan kunjungan wisatawan domestik Bali dan cuaca bulanan Denpasar",
+  "dibuat": "2026-11-17 05:37:30",
+  "jumlah_baris": 264,
+  "jumlah_kolom": 8,
+  "rentang_waktu": [
+    2004,
+    2025
+  ],
+  "kunci_penggabungan": [
+    "Tahun",
+    "Bulan_Angka"
+  ],
+  "koordinat_cuaca": {
+    "lokasi": "Denpasar",
+    "lat": -8.65,
+    "lon": 115.2167
+  },
+  "keterbatasan": [
+    "Cuaca hanya mewakili titik Denpasar, bukan seluruh Bali",
+    "Data BPS hanya wisatawan domestik",
+    "Tahun 2020-2021 dipengaruhi pandemi COVID-19"
+  ],
+  "kolom": [
+    "Tahun",
+    "Bulan_Angka",
+    "Bulan",
+    "Jumlah_Wisatawan",
+    "Suhu_Rata2_C",
+    "Kelembapan_Rata2_Persen",
+    "Curah_Hujan_Total_mm",
+    "Hari_Hujan"
+  ],
+  "validasi_merge": {
+    "metode": "DataFrame.merge(on=['Tahun','Bulan_Angka'], how='inner', validate='one_to_one')",
+    "baris_bps": 264,
+    "baris_cuaca": 264,
+    "baris_gabungan": 264,
+    "duplikat_kunci_bps": 0,
+    "duplikat_kunci_cuaca": 0,
+    "duplikat_kunci_gabungan": 0,
+    "duplikat_baris_penuh_gabungan": 0,
+    "anti_join_both/left_only/right_only": {
+      "both": 264,
+      "left_only": 0,
+      "right_only": 0
+    },
+    "missing_gabungan": 0
+  },
+  "robots_check": {
+    "robots_url": "https://id.wikipedia.org/robots.txt",
+    "http_status": 200,
+    "user_agent_dicek": "*",
+    "url_target": "https://id.wikipedia.org/wiki/Pariwisata_di_Bali",
+    "can_fetch": true,
+    "waktu_cek": "2026-11-17 05:38:44"
+  },
+  "api_bps": {
+    "dicoba": false,
+    "http_status": null,
+    "hasil": "tidak dicoba",
+    "catatan": "BPS_API_KEY belum diset (.env / Colab Secrets)",
+    "keputusan": "Data cuaca tidak tersedia di API BPS, sehingga memakai API publik Open-Meteo (alternatif yang dibolehkan soal 3)."
+  }
+}

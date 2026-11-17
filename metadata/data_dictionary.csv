@@ -1,0 +1,9 @@
+Kolom,Tipe,Deskripsi,Sumber
+Tahun,int,Tahun kalender,BPS
+Bulan_Angka,int,Nomor bulan (1-12),BPS
+Bulan,str,Nama bulan (Indonesia),BPS
+Jumlah_Wisatawan,int,Kunjungan wisatawan domestik ke Bali per bulan (orang),BPS
+Suhu_Rata2_C,float,"Rata-rata suhu udara 2 m harian dalam sebulan (°C), titik Denpasar",Open-Meteo
+Kelembapan_Rata2_Persen,float,Rata-rata kelembapan relatif harian dalam sebulan (%),Open-Meteo
+Curah_Hujan_Total_mm,float,Total curah hujan sebulan (mm),Open-Meteo
+Hari_Hujan,int,Jumlah hari dengan curah hujan >= 1 mm,Open-Meteo (turunan)

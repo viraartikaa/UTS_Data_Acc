@@ -1,0 +1,16 @@
+{
+  "metode": "DataFrame.merge(on=['Tahun','Bulan_Angka'], how='inner', validate='one_to_one')",
+  "baris_bps": 264,
+  "baris_cuaca": 264,
+  "baris_gabungan": 264,
+  "duplikat_kunci_bps": 0,
+  "duplikat_kunci_cuaca": 0,
+  "duplikat_kunci_gabungan": 0,
+  "duplikat_baris_penuh_gabungan": 0,
+  "anti_join_both/left_only/right_only": {
+    "both": 264,
+    "left_only": 0,
+    "right_only": 0
+  },
+  "missing_gabungan": 0
+}
