@@ -1,6 +1,7 @@
 # UTS DAM - Analisis Data Pariwisata Bali
 
 Integrasi dataset BPS (wisatawan domestik bulanan ke Bali 2004-2025), data cuaca Open-Meteo (titik Denpasar), dan satu tabel hasil web scraping.
+sumber: https://bali.bps.go.id/id/statistics-table?subject=561
 
 ## Struktur
 - data/raw/        : berkas mentah (BPS, open_meteo.json, scraping_destinasi.html, robots.txt)
